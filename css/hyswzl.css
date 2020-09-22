@@ -1,0 +1,60 @@
+.cl_2{
+    background-color: rgba(255,203,25,.3);
+}
+.contentBoxList{
+    width: 1000px;
+    height: auto;
+    margin: 5vh auto 5vh;
+}
+.contentBoxList ol{
+    width: auto;
+    height: 25vh;
+}
+.contentBoxList li{
+    animation: run 3s ease-in-out infinite;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    background-color: #0AB5E7;
+}
+.contentBoxList a{
+    display: inline-block;
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+}
+.contentBoxList ol:first-child,
+.contentBoxList ol:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contentBoxList ol:first-child li:nth-child(2){
+    align-self: flex-start;
+}
+.contentBoxList ol:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBoxList ol:last-child li:nth-child(2){
+    align-self: flex-end;
+}
+.animationRun1 li:first-child{
+
+}
+@keyframes run {
+    from{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+

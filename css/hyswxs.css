@@ -1,0 +1,117 @@
+body {
+    background-size: 100%;
+    background-repeat: repeat-y;
+
+}
+
+.list-r {
+    opacity: .75;
+}
+
+body {
+
+    background-size: cover;
+}
+
+.bkContent {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBoxesOne:after,
+.imgBoxesOne:before,
+.imgBoxesTwo:after,
+.imgBoxesTwo:before {
+    content: "";
+    clear: both;
+}
+
+.imgBoxes li {
+    box-sizing: border-box;
+    border: 1px solid #2e3b41;
+    float: left;
+    /*width: 400px;*/
+    /*height: 250px;*/
+    background-color: rgb(1, 28, 39);
+}
+
+.imgBoxesOne li:nth-child(n+2),
+.imgBoxesTwo li:nth-child(n+2) {
+    margin-left: 5px;
+}
+
+.imgBoxes li:hover {
+    background-color: rgb(4, 44, 60);
+}
+
+.bkContent h2,
+.bkContent p,
+.bkContent span {
+    color: #dfcca1;
+    text-indent: 2em;
+}
+
+.imgBoxesOneData,
+.imgBoxesTwoData {
+    margin: 20px 0 20px 30px;
+}
+
+.imgBoxesOne img,
+.imgBoxesTwo img {
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    opacity: .35;
+}
+
+.menu li:hover a, .menu li.a a {
+    background: none;
+}
+
+/* 返回顶部组件 */
+.RightTop {
+    width: 55px;
+    height: 70px;
+    position: fixed;
+    right: 2%;
+    top: 45%;
+    text-align: center;
+    color: blue;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.RightTop img {
+    width: 50px;
+    height: 50px;
+}
+
+.imgBoxes img {
+    opacity: 1;
+}
+
+.imgBoxesThree li:nth-child(n+2) {
+    margin-left: 1px;
+}
+
+.imgBoxesShow img {
+    padding: 2px;
+    display: inline-block;
+    width: 400px;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.imgBoxesShow {
+    width: 1200px;
+    height: auto;
+    margin: 20px auto 0;
+}
+#container {
+    column-count: 3;
+}
